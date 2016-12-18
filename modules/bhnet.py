@@ -101,7 +101,7 @@ def server_loop():
         # if no target is defined we listen on all interfaces
         if not len(target):
                 target = "0.0.0.0"
-                
+		port = 9999
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         server.bind((target,port))
         
@@ -191,10 +191,10 @@ def main():
         global upload_destination
         global target
         
-        if not len(sys.argv[1:]):
-                usage()
+        """if not len(sys.argv[1:]):
+        #        usage()
                 
-        # read the commandline options
+         read the commandline options
         try:
                 opts, args = getopt.getopt(sys.argv[1:],"hle:t:p:cu:",["help","listen","execute","target","port","command","upload"])
         except getopt.GetoptError as err:
@@ -220,7 +220,8 @@ def main():
                 else:
                         assert False,"Unhandled Option"
         
-
+		"""
+		
         # are we going to listen or just send data from stdin
         if not listen and len(target) and port > 0:
                 
