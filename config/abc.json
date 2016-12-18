@@ -6,6 +6,6 @@
 	"module" : "environment"
 	},
 	{
-	"module" : "shell_exec"
+	"module" : "keylogger"
 	}
 ]
